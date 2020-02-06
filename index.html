@@ -11,10 +11,15 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
+
 	<!-- Matomo -->
 	<script type="text/javascript">
 		var _paq = window._paq || [];
 		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+		_paq.push(["setCookieDomain", "*.taillislabs.com"]);
+		_paq.push(["setDomains", ["*.taillislabs.com"]]);
 		_paq.push(['trackPageView']);
 		_paq.push(['enableLinkTracking']);
 		(function () {
@@ -25,6 +30,9 @@
 			g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = '//cdn.matomo.cloud/taillislabs.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
 		})();
 	</script>
+	<noscript>
+		<p><img src="https://taillislabs.matomo.cloud/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+	</noscript>
 	<!-- End Matomo Code -->
 </head>
 
@@ -34,7 +42,7 @@
 	<header id="header">
 		<h1>Ew ew</h1>
 		<p>A simple message for telling the world ...<br />
-		<button>Click here</button>
+			<button>Click here</button>
 	</header>
 
 	<!-- Signup Form -->
